@@ -1,0 +1,57 @@
+// out: ../css/style.css
+
+@primary: #2980b9;
+@secondary: #000;
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma";
+}
+h1, h2, h3, h4, h5, h6, ul, li, a, span, p, div {
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma";
+	font-size: 14px;
+	font-weight: normal;
+	list-style: none;
+	text-decoration: none;
+	color: #000;
+}
+
+
+.btn-group {
+	.btn {
+		display: inline-block;
+		padding: 12px 20px;
+		background-color: @primary;
+		color: #fff;
+		user-select: none;
+		cursor: pointer;
+	}
+}
+
+.modal-container-open{
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	.modal{
+		background-color: white;
+	}
+	.overlay{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}
+.modal-container {
+	display: none;
+
+}
+p{
+	background-color: #fff;
+	width: 400px;
+}
